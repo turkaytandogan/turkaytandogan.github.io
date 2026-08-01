@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="index">
+
+    <!--HERO-->
+    <section class="hero" id="hero">
+        <header class="header">
+            <nav class="nav container">
+                <div class="nav-data">
+                    <div class="nav-toggle" id="nav_toggle">
+                        <i class="ri-menu-line nav-burger"></i>
+                        <i class="ri-close-line nav-close"></i>
+                    </div>
+                </div>
+
+                <!--NAV MENU-->
+                <div class="nav-menu" id="nav_menu">
+                    <ul class="nav-list">
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#experiences" class="nav-link">Experiences</a></li>
+                        <li><a href="#skills" class="nav-link">Skills</a></li>
+                        <li><a href="#projects" class="nav-link">Projects</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="hero-title">
+            <span>Hello, I'm</span>
+            <h1>Türkay Tandoğan</h1>
+            <h2>Indie Game Developer, Unity | C# | Firebase</h2>
+            <button onclick="downloadResume()" type="button" class="button">Download CV</button>
+        </div>
+    </section>
+
+    <main class="main">
+        <!--ABOUT-->
+        <section class="about section" id="about">
+            <h3 class="sub-section-title">Get To Know More</h3>
+            <h2 class="section-title">About Me</h2>
+
+            <div class="about-container container">
+                <div class="about-data">
+                    <p class="about-description">
+                        I’m a Computer Engineer specializing in mobile game development and frontend web technologies.
+                        <br><br>
+                        For the past 3 years, I’ve been designing and developing mobile games using C#, Unity, and
+                        Firebase, focusing on gameplay, performance, and user engagement. I’ve also managed user
+                        acquisition strategies through Google Ads, Meta Ads (Facebook Business Manager), and carried out
+                        effective App Store Optimization (ASO) to increase visibility and downloads across platforms.
+                        <br><br>
+                        Also I’ve been building my skills in frontend web development, working with HTML,
+                        CSS, and JavaScript to create responsive and interactive user interfaces and websites.
+                        <br><br>
+                        I’m currently seeking a career transition opportunity. Feel free to reach out if you’d like to
+                        connect or learn more about my work.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--EXPERIENCES-->
+        <section class="experiences section" id="experiences">
+            <h3 class="sub-section-title">Explore My</h3>
+            <h2 class="section-title">Experiences</h2>
+
+            <div class="experiences-container container">
+                <div class="experiences-tabs">
+                    <div class="experiences-button experiences-active" data-target="#education">
+                        <img src="/images/school-icon.png" alt="image" class="experiences-icon">
+                        Education
+                    </div>
+
+                    <div class="experiences-button" data-target="#work">
+                        <img src="/images/experience-icon.png" alt="image" class="experiences-icon">
+                        Work
+                    </div>
+                </div>
+
+                <div class="experiences-sections">
+                    <div class="experiences-content experiences-active" data-content id="education">
+                        <div class="experiences-data">
+                            <div>
+                                <h3 class="experiences-title">Computer Engineering</h3>
+                                <span class="experiences-subtitle">Beykent University</span>
+                                <span class="experiences-subtitle">Bachelor's Degree</span>
+                                <div class="experiences-calendar">
+                                    <i class="ri-calendar-2-fill"></i>
+                                    Sep 2020 - Aug 2024 <br> İstanbul
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="experiences-rounder"></span>
+                                <span class="experiences-line"></span>
+                            </div>
+                        </div>
+
+                        <div class="experiences-data">
+                            <div></div>
+
+                            <div>
+                                <span class="experiences-rounder"></span>
+                                <!--<span class="experiences-line"></span>-->
+                            </div>
+
+                            <div>
+                                <h3 class="experiences-title">EMT/Paramedic</h3>
+                                <span class="experiences-subtitle">Şişli University</span>
+                                <span class="experiences-subtitle">Associate's Degree</span>
+                                <div class="experiences-calendar">
+                                    <i class="ri-calendar-2-fill"></i>
+                                    Sep 2014 - Jun 2016 <br> İstanbul
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experiences-content" data-content id="work">
+                        <div class="experiences-data">
+                            <div>
+                                <h3 class="experiences-title">Indie Game Developer</h3>
+                                <span class="experiences-subtitle">Self Employed</span>
+                                <div class="experiences-calendar">
+                                    <i class="ri-calendar-2-fill"></i>
+                                    Nov 2022 - Present
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="experiences-rounder"></span>
+                                <span class="experiences-line"></span>
+                            </div>
+                        </div>
+
+                        <div class="experiences-data">
+                            <div></div>
+
+                            <div>
+                                <span class="experiences-rounder"></span>
+                                <span class="experiences-line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="experiences-title">Frontend Web Developer</h3>
+                                <span class="experiences-subtitle">Self Employed</span>
+                                <div class="experiences-calendar">
+                                    <i class="ri-calendar-2-fill"></i>
+                                    May 2023 - Present
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="experiences-data">
+                            <div>
+                                <h3 class="experiences-title">EMT - Paramedic</h3>
+                                <span class="experiences-subtitle">Turkish Ministry of Health</span>
+                                <div class="experiences-calendar">
+                                    <i class="ri-calendar-2-fill"></i>
+                                    Jun 2016 - Present
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="experiences-rounder"></span>
+                                <!--<span class="experiences-line"></span>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--SKILLS-->
+        <section class="skills section" id="skills">
+            <h3 class="sub-section-title">Explore My</h3>
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills-container container grid">
+                <div class="skills-group">
+                    <div class="skills-item">
+                        <header class="skills-header">
+                            <i class="ri-add-line skills-icon"></i>
+                            <h3 class="skills-item-title">Unity Engine</h3>
+                            <img src="images/skill-star.png" alt="image" class="skills-star">
+                            <img src="images/skill-star.png" alt="image" class="skills-star">
+                            <img src="images/skill-star.png" alt="image" class="skills-star">
+                            <img src="images/skill-star.png" alt="image" class="skills-star">
+                            <img src="images/skill-star.png" alt="image" class="skills-star">
+
+                        </header>
+
+                        <div class="skills-content">
+                            <ul class="skills-description">
+                                <li>
+                                    <p>Cross-Platform Development (Android & iOS)</p>
+                                </li>
+                                <li>
+                                    <p>Game Mechanics Implementation</p>
+                                </li>
+                                <li>
+                                    <p>Level Design and Balancing</p>
+                                </li>
+                                <li>
+                                    <p>UI/UX Design (With custom assets)</p>
+                                </li>
+                                <li>
+                                    <p>Performance Optimization</p>
+                                </li>
+                                <li>
+                                    <p>Game Economy and Balance Design</p>
+                                </li>
+                                <li>
+                                    <p>Playtesting and Iteration</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="skills-item">
+                        <header class="skills-header">
+                            <i class="ri-add-line skills-icon"></i>
+                            <h3 class="skills-item-title">
+                                C# Programming
+                            </h3>
+                            <img src="images/skill-star.png" alt="image" class="skills-star">
+                            <img src="images/skill-star.png" alt="image" class="skills-star">
+                            <img src="images/skill-star.png" alt="image" class="skills-star">
+                            <img src="images/skill-star.png" alt="image" class="skills-star">
+                        </header>
+
+                        <div class="skills-content">
+                            <ul class="skills-description">
+                                <li>
+                                    <p>OOP-based, clean, and maintainable code.</p>
+                                </li>
+                                <li>
+                                    <p>Custom tools and editor scripts.</p>
+                                </li>
+                                <li>
+                                    <p>Design patterns for game development.</p>
+                                </li>
+                                <li>
+                                    <p>Performance optimization in gameplay code.</p>
+                                </li>
+                                <li>
+                                    <p>Test-driven development practices.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="skills-item">
+                        <header class="skills-header">
+                            <i class="ri-add-line skills-icon"></i>
+                            <h3 class="skills-item-title">
+                                Google Firebase
+                            </h3>
+                            <img src="images/skill-star.png" alt="image" class="skills-star">
+                            <img src="images/skill-star.png" alt="image" class="skills-star">
+                            <img src="images/skill-star.png" alt="image" class="skills-star">
+                        </header>
+
+                        <div class="skills-content">
+                            <ul class="skills-description">
+                                <li>
+                                    <p>Authentication for game players.</p>
+                                </li>
+                                <li>
+                                    <p>Cloud storage usage for game assets and
+                                        player data.</p>
+                                </li>
+                                <li>
+                                    <p>Analytics setup and event tracking.</p>
+                                </li>
+                                <li>
+                                    <p>Remote config for live updates and A/B
+                                        testing.</p>
+                                </li>
+                                <li>
+                                    <p>Cloud Functions for backend automation
+                                        and logic.</p>
+                                </li>
+                                <li>
+                                    <p>Firestore integration for scalable game data.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-group">
+                    <div class="skills-item">
+                        <header class="skills-header">
+                            <i class="ri-add-line skills-icon"></i>
+                            <h3 class="skills-item-title">
+                                GitHub
+                            </h3>
+                            <img src="images/skill-star.png" alt="image" class="skills-star">
+                            <img src="images/skill-star.png" alt="image" class="skills-star">
+                        </header>
+
+                        <div class="skills-content">
+                            <ul class="skills-description">
+                                <li>
+                                    <p>Version Control, solo & collaborative projects.</p>
+                                </li>
+                                <li>
+                                    <p>Branching, merging, and code reviews.</p>
+                                </li>
+                                <li>
+                                    <p>Release Management</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="skills-item">
+                        <header class="skills-header">
+                            <i class="ri-add-line skills-icon"></i>
+                            <h3 class="skills-item-title">
+                                Others
+                            </h3>
+                            <img src="images/skill-star.png" alt="image" class="skills-star">
+                            <img src="images/skill-star.png" alt="image" class="skills-star">
+                            <img src="images/skill-star.png" alt="image" class="skills-star">
+                        </header>
+
+                        <div class="skills-content">
+                            <ul class="skills-description">
+                                <li>
+                                    <p>Mobile App Publishing (Google Play & AppleStore)</p>
+                                </li>
+                                <li>
+                                    <p>App Store Optimization Strategies (ASO)</p>
+                                </li>
+                                <li>
+                                    <p>Ads Management (Google Ads & Meta Ads etc.)</p>
+                                </li>
+                                <li>
+                                    <p>Ads Conversion Tracking</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="skills-item">
+                        <header class="skills-header">
+                            <i class="ri-add-line skills-icon"></i>
+                            <h3 class="skills-item-title">
+                                Frontend Web Dev.
+                            </h3>
+                            <img src="images/skill-star.png" alt="image" class="skills-star">
+                            <img src="images/skill-star.png" alt="image" class="skills-star">
+                            <img src="images/skill-star.png" alt="image" class="skills-star">
+                        </header>
+
+                        <div class="skills-content">
+                            <ul class="skills-description">
+                                <li>
+                                    <p>HTML</p>
+                                </li>
+                                <li>
+                                    <p>CSS</p>
+                                </li>
+                                <li>
+                                    <p>JavaScript</p>
+                                </li>
+                                <li>
+                                    <p>SEO Optimization</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--PROJECTS-->
+        <section class="projects section" id="projects">
+            <h3 class="sub-section-title">Browse My Recent</h3>
+            <h2 class="section-title">Projects</h2>
+
+            <div class="projects-container container">
+                <div class="projects-tabs">
+                    <div class="projects-button projects-active" data-target="#games">
+                        <img src="/images/game-icon.png" alt="image" class="projects-icon">
+                        Games
+                    </div>
+
+                    <div class="projects-button" data-target="#websites">
+                        <img src="/images/web-icon.png" alt="image" class="projects-icon">
+                        Websites
+                    </div>
+                </div>
+
+                <div class="projects-sections">
+
+                    <!--GAME PROJECTS-->
+                    <div class="projects-content projects-active" data-content id="games">
+                        <div class="all-projects">
+                            <div class="project">
+                                <div class="project-swiper swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="images/word1.jpg" />
+                                        </div>
+                                        <div class="swiper-slide"><img src="images/word2.png" />
+                                        </div>
+                                        <div class="swiper-slide"><img src="images/word3.png" />
+                                        </div>
+                                        <div class="swiper-slide"><img src="images/word4.png" />
+                                        </div>
+                                        <div class="swiper-slide"><img src="images/word5.png" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+
+                                <div class="project-info">
+                                    <h2 class="project-title">Word Match 3D: Spelling Puzzle</h2>
+                                    <p class="project-description">
+                                        Word Match 3D is a fresh and exciting puzzle game where you collect 3D letters
+                                        and create real words using only the letters you’re given. It’s a new kind of
+                                        spelling challenge that blends simple mechanics with satisfying 3D gameplay.
+                                    </p>
+                                    <div class="contribution-item">
+                                        <header class="contribution-header">
+                                            <i class="ri-add-line contribution-icon"></i>
+                                            <h3 class="contribution-item-title">My Contribitions</h3>
+                                            <img src="images/rocket-icon.png" alt="image" class="contribution-rocket">
+                                        </header>
+
+                                        <div class="contribution-content">
+                                            <ul class="contribution-description">
+                                                <li>
+                                                    <p>Level design and difficulty progression</p>
+                                                </li>
+                                                <li>
+                                                    <p>UI design using ready-made assets</p>
+                                                </li>
+                                                <li>
+                                                    <p>Gameplay and backend development</p>
+                                                </li>
+                                                <li>
+                                                    <p>Game economy and shop system setup</p>
+                                                </li>
+                                                <li>
+                                                    <p>Performance optimization for mobile devices</p>
+                                                </li>
+                                                <li>
+                                                    <p>Leaderboard implementation</p>
+                                                </li>
+                                                <li>
+                                                    <p>Testing and bug fixing</p>
+                                                </li>
+                                                <li>
+                                                    <p>Ad integration via Google Ads and Facebook</p>
+                                                </li>
+                                                <li>
+                                                    <p>App Store Optimization (ASO)</p>
+                                                </li>
+                                                <li>
+                                                    <p>Spin-based reward system</p>
+                                                </li>
+                                                <li>
+                                                    <p>Mission and daily task system</p>
+                                                </li>
+                                                <li>
+                                                    <p>Daily reward and login bonus features</p>
+                                                </li>
+                                                <li>
+                                                    <p>Power-up mechanics and integration</p>
+                                                </li>
+                                                <li>
+                                                    <p>Team and social system development</p>
+                                                </li>
+                                                <li>
+                                                    <p>In-game chat functionality</p>
+                                                </li>
+                                                <li>
+                                                    <p>Booster system implementation</p>
+                                                </li>
+                                                <li>
+                                                    <p>Event system design and management</p>
+                                                </li>
+                                                <li>
+                                                    <p>General production tasks for mobile game publishing</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="download-buttons">
+                                        <a href="https://apps.apple.com/us/app/word-match-3d-spelling-puzzle/id6661033531"
+                                            target="_blank" class="button-download"><img src="/images/apple-badge.png"
+                                                alt="apple"></a>
+                                        <a href="https://play.google.com/store/apps/details?id=com.craftera.wordMatch3D&hl=en"
+                                            target="_blank" class="button-download"><img src="/images/google-badge.png"
+                                                alt="google"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project">
+                                <div class="project-swiper swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="images/jelly1.png" />
+                                        </div>
+                                        <div class="swiper-slide"><img src="images/jelly2.png" />
+                                        </div>
+                                        <div class="swiper-slide"><img src="images/jelly3.png" />
+                                        </div>
+                                        <div class="swiper-slide"><img src="images/jelly4.png" />
+                                        </div>
+                                        <div class="swiper-slide"><img src="images/jelly5.png" />
+                                        </div>
+                                        <div class="swiper-slide"><img src="images/jelly6.png" />
+                                        </div>
+                                        <div class="swiper-slide"><img src="images/jelly7.png" />
+                                        </div>
+                                        <div class="swiper-slide"><img src="images/jelly8.png" />
+                                        </div>
+                                        <div class="swiper-slide"><img src="images/jelly9.png" />
+                                        </div>
+                                        <div class="swiper-slide"><img src="images/jelly10.png" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+
+                                <div class="project-info">
+                                    <h2 class="project-title">Jelly Rush: Puzzle Master</h2>
+                                    <p class="project-description">
+                                        Jelly Rush is a vibrant puzzle game where players drag colorful jelly blocks to
+                                        match the target shape shown above. It offers a fun challenge that tests spatial
+                                        skills and quick thinking.
+                                    </p>
+
+                                    <div class="contribution-item">
+                                        <header class="contribution-header">
+                                            <i class="ri-add-line contribution-icon"></i>
+                                            <h3 class="contribution-item-title">My Contribitions</h3>
+                                            <img src="images/rocket-icon.png" alt="image" class="contribution-rocket">
+                                        </header>
+
+                                        <div class="contribution-content">
+                                            <ul class="contribution-description">
+                                                <li>
+                                                    <p>Level design and difficulty progression</p>
+                                                </li>
+                                                <li>
+                                                    <p>UI design using ready-made assets</p>
+                                                </li>
+                                                <li>
+                                                    <p>Gameplay and backend development</p>
+                                                </li>
+                                                <li>
+                                                    <p>Game economy and shop system setup</p>
+                                                </li>
+                                                <li>
+                                                    <p>Performance optimization for mobile devices</p>
+                                                </li>
+                                                <li>
+                                                    <p>Leaderboard implementation</p>
+                                                </li>
+                                                <li>
+                                                    <p>Testing and bug fixing</p>
+                                                </li>
+                                                <li>
+                                                    <p>Ad integration via Google Ads and Facebook</p>
+                                                </li>
+                                                <li>
+                                                    <p>App Store Optimization (ASO)</p>
+                                                </li>
+                                                <li>
+                                                    <p>Spin-based reward system</p>
+                                                </li>
+                                                <li>
+                                                    <p>Mission and daily task system</p>
+                                                </li>
+                                                <li>
+                                                    <p>Daily reward and login bonus features</p>
+                                                </li>
+                                                <li>
+                                                    <p>Power-up mechanics and integration</p>
+                                                </li>
+                                                <li>
+                                                    <p>General production tasks for mobile game publishing</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="download-buttons">
+                                        <a href="https://apps.apple.com/us/app/jelly-rush-puzzle-master/id6472942410"
+                                            target="_blank" class="button-download"><img src="/images/apple-badge.png"
+                                                alt="apple"></a>
+                                        <a href="https://play.google.com/store/apps/details?id=com.craftera.projectCore&hl=en"
+                                            target="_blank" class="button-download"><img src="/images/google-badge.png"
+                                                alt="google"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project">
+                                <div class="project-swiper swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="images/dot1.png" />
+                                        </div>
+                                        <div class="swiper-slide"><img src="images/dot2.png" />
+                                        </div>
+                                        <div class="swiper-slide"><img src="images/dot3.png" />
+                                        </div>
+                                        <div class="swiper-slide"><img src="images/dot4.png" />
+                                        </div>
+                                        <div class="swiper-slide"><img src="images/dot5.png" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+
+                                <div class="project-info">
+                                    <h2 class="project-title">Dot2Dot: Connect the Colors</h2>
+                                    <p class="project-description">
+                                        Dot2Dot is a casual and fun puzzle game where you have to match dots of the same
+                                        colors. You must be fast and use your ink wisely. Watch out for explosive dots
+                                        before they explode and be quick to match the dots before they change color.
+                                    </p>
+                                    <div class="contribution-item">
+                                        <header class="contribution-header">
+                                            <i class="ri-add-line contribution-icon"></i>
+                                            <h3 class="contribution-item-title">My Contribitions</h3>
+                                            <img src="images/rocket-icon.png" alt="image" class="contribution-rocket">
+                                        </header>
+
+                                        <div class="contribution-content">
+                                            <ul class="contribution-description">
+                                                <li>
+                                                    <p>Level design and difficulty progression</p>
+                                                </li>
+                                                <li>
+                                                    <p>UI design using ready-made assets</p>
+                                                </li>
+                                                <li>
+                                                    <p>Gameplay and backend development</p>
+                                                </li>
+                                                <li>
+                                                    <p>Game economy and shop system setup</p>
+                                                </li>
+                                                <li>
+                                                    <p>Performance optimization for mobile devices</p>
+                                                </li>
+                                                <li>
+                                                    <p>Leaderboard implementation</p>
+                                                </li>
+                                                <li>
+                                                    <p>Testing and bug fixing</p>
+                                                </li>
+                                                <li>
+                                                    <p>Ad integration via Google Ads and Facebook</p>
+                                                </li>
+                                                <li>
+                                                    <p>App Store Optimization (ASO)</p>
+                                                </li>
+                                                <li>
+                                                    <p>General production tasks for mobile game publishing</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="download-buttons">
+                                        <a href="https://apps.apple.com/us/app/dot2dot-connect-the-colors/id6450399432"
+                                            target="_blank" class="button-download"><img src="/images/apple-badge.png"
+                                                alt="apple"></a>
+                                        <a href="https://play.google.com/store/apps/details?id=com.Craftera.Project_Dots&hl=en"
+                                            target="_blank" class="button-download"><img src="/images/google-badge.png"
+                                                alt="google"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--WEBSITE PROJECTS-->
+                    <div class="projects-content" data-content id="websites">
+                        <div class="all-projects">
+                            <div class="project">
+                                <img class="project-web-image" src="images/logistics-web.png" alt="image">
+                                <div class="project-info">
+                                    <h2 class="project-title">Logistics Website</h2>
+                                    <div class="contribution-item">
+                                        <header class="contribution-header">
+                                            <i class="ri-add-line contribution-icon"></i>
+                                            <h3 class="contribution-item-title">My Contribitions</h3>
+                                            <img src="images/rocket-icon.png" alt="image" class="contribution-rocket">
+                                        </header>
+
+                                        <div class="contribution-content">
+                                            <ul class="contribution-description">
+                                                <li>
+                                                    <p>Built responsive websites using HTML, CSS, and JavaScript</p>
+                                                </li>
+                                                <li>
+                                                    <p>Designed mobile-friendly layouts and clean UI structures</p>
+                                                </li>
+                                                <li>
+                                                    <p>Optimized performance and browser compatibility</p>
+                                                </li>
+                                                <li>
+                                                    <p>Deployed and managed hosting for all websites</p>
+                                                </li>
+                                                <li>
+                                                    <p>Handled full development cycle from design to launch</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="website-button">
+                                        <a href="https://graylojistik.com/" target="_blank"><button type="button" class="button"><i class="ri-link"></i> Visit
+                                                Website</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <img class="project-web-image" src="images/craftera-web.png" alt="image">
+                                <div class="project-info">
+                                    <h2 class="project-title">Game Company Website</h2>
+                                    <div class="contribution-item">
+                                        <header class="contribution-header">
+                                            <i class="ri-add-line contribution-icon"></i>
+                                            <h3 class="contribution-item-title">My Contribitions</h3>
+                                            <img src="images/rocket-icon.png" alt="image" class="contribution-rocket">
+                                        </header>
+
+                                        <div class="contribution-content">
+                                            <ul class="contribution-description">
+                                                <li>
+                                                    <p>Built responsive websites using HTML, CSS, and JavaScript</p>
+                                                </li>
+                                                <li>
+                                                    <p>Designed mobile-friendly layouts and clean UI structures</p>
+                                                </li>
+                                                <li>
+                                                    <p>Optimized performance and browser compatibility</p>
+                                                </li>
+                                                <li>
+                                                    <p>Deployed and managed hosting for all websites</p>
+                                                </li>
+                                                <li>
+                                                    <p>Handled full development cycle from design to launch</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="website-button">
+                                        <a href="https://crafteragames.com/" target="_blank"><button type="button" class="button"><i class="ri-link"></i> Visit
+                                                Website</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <img class="project-web-image" src="images/law-web.png" alt="image">
+                                <div class="project-info">
+                                    <h2 class="project-title">Law Firm Website</h2>
+                                    <div class="contribution-item">
+                                        <header class="contribution-header">
+                                            <i class="ri-add-line contribution-icon"></i>
+                                            <h3 class="contribution-item-title">My Contribitions</h3>
+                                            <img src="images/rocket-icon.png" alt="image" class="contribution-rocket">
+                                        </header>
+
+                                        <div class="contribution-content">
+                                            <ul class="contribution-description">
+                                                <li>
+                                                    <p>Built responsive websites using HTML, CSS, and JavaScript</p>
+                                                </li>
+                                                <li>
+                                                    <p>Designed mobile-friendly layouts and clean UI structures</p>
+                                                </li>
+                                                <li>
+                                                    <p>Optimized performance and browser compatibility</p>
+                                                </li>
+                                                <li>
+                                                    <p>Deployed and managed hosting for all websites</p>
+                                                </li>
+                                                <li>
+                                                    <p>Handled full development cycle from design to launch</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="website-button">
+                                        <a href="https://yagcitaskiranhukuk.com/" target="_blank"><button type="button" class="button"><i class="ri-link"></i> Visit
+                                                Website</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--CONTACT-->
+        <section class="contact section" id="contact">
+            <h3 class="sub-section-title">Get In Touch</h3>
+            <h2 class="section-title">Contact Me</h2>
+
+            <div class="contact-container container">
+                <div class="contact-card">
+                    <a href="mailto:turkaytandogan34@hotmail.com" class="contact-link"><i
+                            class="ri-mail-fill"></i>turkaytandogan34@hotmail.com</a>
+                    <a href="https://www.linkedin.com/in/t%C3%BCrkay-tando%C4%9Fan/" target="_blank"
+                        class="contact-link"><i class="ri-linkedin-box-fill"></i>LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!--SCROOL UP-->
+        <a href="#" class="scrollup" id="scroll_up"><i class="ri-arrow-up-line"></i></a>
+    </main>
+
+    <!--SWIPER JS-->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!--MAIN JS-->
+    <script src="js/main.js"></script>
+
+
+
+</body>
+
+</html>
